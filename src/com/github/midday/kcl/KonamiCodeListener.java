@@ -13,17 +13,17 @@ public class KonamiCodeListener extends KeyAdapter {
 
 	public void keyPressed(KeyEvent evt) {
 		// Check for the KonamiSequece
-		if (evt.getKeyCode() == BUTTONLIST[count]) {
-			count++;
+		if (evt.getKeyCode() == BUTTONLIST[count]) {			
+			// if the code checks out startSecret(evt.getSource())
+			if (++count > 9) {
+				startSecret(evt.getSource());
+				//reset counter
+				count =0;
+			}
 		} else {
 			count = 0;
 		}
-		// if the code checks out startSecret(evt.getSource())
-		if (count > 9) {
-			startSecret(evt.getSource());
-			//reset counter
-			count =0;
-		}
+		
 
 
 
