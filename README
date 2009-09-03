@@ -1,0 +1,15 @@
+KonamiCodeListener
+-----------------
+
+motivation:
+		I made this to be included in other projects as for eastereggs
+usage:
+	 1. download the jar from the downloads section
+	 2. put in your projects buildpath
+	 3. import com.github.midday.kcl.KonamiCodeListener;
+	 4. just extend it like the normal KeyAdapter
+	!5. Overwrite the startSecret method
+credits:
+	midday <- thats me
+	wikipedia <- reminding me of the konamicode
+	konami <- inventing the konamicode (duh!)	
